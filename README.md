@@ -7,5 +7,10 @@ aws s3 cp --recursive --exclude "*.jpg" --profile production s3://pub.distantsho
 
 ### Push to S3
 ```bash
-aws s3 cp --recursive --profile production /var/www/projects/pub.distantshores.org/public s3://pub.distantshores.org 
+aws s3 cp --recursive --profile production /var/www/projects/pub.distantshores.org/public s3://pub.distantshores.org
+```
+
+### Push only changed files to S3
+```bash
+aws s3 sync --profile production /var/www/projects/pub.distantshores.org/public s3://pub.distantshores.org 
 ```
