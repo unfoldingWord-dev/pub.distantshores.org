@@ -1,3 +1,5 @@
 .idea/
 *.iml
 deploy.sh
+public/images/obs/
+public/images/rg/
